@@ -1,0 +1,94 @@
+[gd_scene load_steps=14 format=3 uid="uid://bysjfbxi2qst0"]
+
+[ext_resource type="Script" path="res://Player/PlayerObj.gd" id="1_6gk3d"]
+[ext_resource type="Texture2D" uid="uid://clpnelhfvvlwp" path="res://Player/Player.png" id="1_p0cat"]
+[ext_resource type="PackedScene" uid="uid://dw2ykhhn36jr7" path="res://Projectile/Projectile.tscn" id="2_kta6v"]
+[ext_resource type="Texture2D" uid="uid://3kwdxuu1e3ql" path="res://Player/Explosion.png" id="4_hrnqq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8tqu0"]
+atlas = ExtResource("4_hrnqq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ec0f4"]
+atlas = ExtResource("4_hrnqq")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kr2u"]
+atlas = ExtResource("4_hrnqq")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4brje"]
+atlas = ExtResource("4_hrnqq")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gksmb"]
+atlas = ExtResource("4_hrnqq")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l74np"]
+atlas = ExtResource("4_hrnqq")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2ehl"]
+atlas = ExtResource("4_hrnqq")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdrgm"]
+atlas = ExtResource("4_hrnqq")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_efxwc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8tqu0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ec0f4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0kr2u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4brje")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gksmb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l74np")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2ehl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdrgm")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D" groups=["Player"]]
+script = ExtResource("1_6gk3d")
+Projectile = ExtResource("2_kta6v")
+speed = 100.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_p0cat")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-3, -12, 3, -12, 6, -2, 11, -2, 13, 1, 13, 12, -13, 12, -13, 1, -10, -2, -6, -2)
+
+[node name="Cannon" type="Marker2D" parent="."]
+position = Vector2(0, -11)
+rotation = -1.5708
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_efxwc")
+speed_scale = 1.8
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

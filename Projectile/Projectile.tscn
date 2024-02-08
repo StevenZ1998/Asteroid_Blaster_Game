@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dw2ykhhn36jr7"]
+
+[ext_resource type="Script" path="res://Projectile/Projectile.gd" id="1_tdxyl"]
+[ext_resource type="Texture2D" uid="uid://dy2pgycriylgp" path="res://Projectile/BulletSpriteSheet.png" id="3_nikib"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rdi5i"]
+radius = 5.0
+height = 20.0
+
+[node name="Projectile" type="Area2D" groups=["Projectile"]]
+script = ExtResource("1_tdxyl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_nikib")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Projectile"]]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_rdi5i")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

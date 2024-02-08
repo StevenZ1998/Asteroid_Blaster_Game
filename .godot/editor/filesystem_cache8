@@ -1,0 +1,49 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707374829
+export_presets.cfg::TextFile::-1::1701573059::0::1::::<><>::
+README.md::TextFile::-1::1707374579::0::1::::<><>::
+::res://Assets/::1701566320
+Crosshair.png::CompressedTexture2D::6266501686486458477::1701562011::1701562018::1::::<><>::
+Purple_Nebula_02-1024x1024.png::CompressedTexture2D::2630931286924309603::1700713741::1700719033::1::::<><>::
+::res://Asteroids/::1701568123
+Asteroid.gd::GDScript::-1::1701555290::0::1::::<>Area2D<>::
+Asteroid.tscn::PackedScene::5483601058963726449::1701568123::0::1::::<><>::res://Asteroids/Asteroid.gd
+::res://Asteroids/Asteroid1/::1701546925
+AsteroidOne.tscn::PackedScene::6216515365830073999::1701546925::0::1::::<><>::uid://cpl8ksjarpidu
+Asteroids#01.png::CompressedTexture2D::5850404655298546658::1700865504::1701504024::1::::<><>::
+::res://Asteroids/Asteroid2/::1701546925
+Asteroids#02.png::CompressedTexture2D::7948789297878637146::1700865527::1701504027::1::::<><>::
+AsteroidTwo.tscn::PackedScene::6847053337789687063::1701546925::0::1::::<><>::uid://dlipnss325efa
+::res://Font/::1701550852
+PeaberryBase.woff::FontFile::3330942341856251221::1701550852::1701550852::1::::<><>::
+::res://Main/::1707373760
+Game.gd::GDScript::-1::1701680210::0::1::::<>Node<>::
+Game.tscn::PackedScene::1893791912962232218::1707373760::0::1::::<><>::res://Main/Game.gd<>uid://bdqpb3k7ihe2f::::res://Assets/Purple_Nebula_02-1024x1024.png<>uid://chy53u1oct6dc::::res://Main/Game_Background.tscn<>uid://c4hmahrvnb20p::::res://Main/WorldBoundry.tscn<>uid://5dsoww67mhkm::::res://SoundController/SoundController.tscn<>uid://db05i3oqg0ap6::::res://Main/HUD.tscn
+Game_Background.tscn::PackedScene::5315580942233663452::1701476824::0::1::::<><>::uid://bdqpb3k7ihe2f
+HUD.gd::GDScript::-1::1701571248::0::1::::<>CanvasLayer<>::
+HUD.tscn::PackedScene::7282897627720096837::1701680593::0::1::::<><>::uid://bnpsestqkmyqv
+WorldBoundry.tscn::PackedScene::6823497475977470981::1701492286::0::1::::<><>::
+::res://Player/::1701568156
+Explosion.png::CompressedTexture2D::1987273770504866395::1701566316::1701566321::1::::<><>::
+Player.png::CompressedTexture2D::5576681366623600127::1700716735::1700935515::1::::<><>::
+PlayerObj.gd::GDScript::-1::1701568156::0::1::::<>Area2D<>::
+PlayerObj.tscn::PackedScene::4108667200937443415::1701568156::0::1::::<><>::res://Player/PlayerObj.gd<>uid://clpnelhfvvlwp
+::res://Projectile/::1701515669
+BulletSpriteSheet.png::CompressedTexture2D::8900455231840682087::1700721131::1700935570::1::::<><>::
+Projectile.gd::GDScript::-1::1701515205::0::1::::<>Area2D<>::
+Projectile.tscn::PackedScene::8760630255347462942::1701515669::0::1::::<><>::res://Projectile/Projectile.gd<>uid://dy2pgycriylgp
+::res://SoundController/::1701680594
+SoundController.gd::GDScript::-1::1701570872::0::1::::<>Node<>::
+SoundController.tscn::PackedScene::2112977540338757052::1701680594::0::1::::<><>::res://SoundController/SoundController.gd<>uid://d2fcrh24pg0px
+::res://SoundController/Sounds/::1701479070
+::res://SoundController/Sounds/Asteroid/::1701505685
+AsteroidSound.tscn::PackedScene::1398810557947792688::1701505685::0::1::::<><>::uid://cwkweyud2nane
+EXPLDsgn_Explosion Impact_14.wav::AudioStreamWAV::6338983913609384630::1700867636::1701479070::1::::<><>::
+::res://SoundController/Sounds/Music/::1701570105
+DavidKBD - Pink Bloom Pack - 02 - Portal to Underworld.ogg::AudioStreamOggVorbis::1169616111770269110::1700718927::1701479048::1::::<><>::
+DavidKBD - Pink Bloom Pack - 08 - Lost Spaceship's Signal.ogg::AudioStreamOggVorbis::7747150531171992470::1701570099::1701570105::1::::<><>::
+::res://SoundController/Sounds/Player/::1701547432
+BlasterSound.tscn::PackedScene::9064834921269500409::1701495131::0::1::::<><>::uid://d08ta4xfgcn17
+Death.wav::AudioStreamWAV::7744508343411993759::1700948542::1701479074::1::::<><>::
+LASRGun_Particle Compressor Fire_01.wav::AudioStreamWAV::8983262789719593624::1700724858::1701479067::1::::<><>::
+PlayerDeathSound.tscn::PackedScene::3711534062207275211::1701547432::0::1::::<><>::uid://dilq6kug2ep0b

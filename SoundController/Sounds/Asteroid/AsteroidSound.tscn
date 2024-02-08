@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://t6ug8t1urju3"]
+
+[ext_resource type="AudioStream" uid="uid://cwkweyud2nane" path="res://SoundController/Sounds/Asteroid/EXPLDsgn_Explosion Impact_14.wav" id="1_x8ld0"]
+
+[node name="AsteroidSound" type="AudioStreamPlayer"]
+stream = ExtResource("1_x8ld0")
+autoplay = true

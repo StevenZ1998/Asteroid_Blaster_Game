@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgh2gh0oia2jj"]
+
+[ext_resource type="PackedScene" uid="uid://bo4sccvygs130" path="res://background.tscn" id="1_2nkqo"]
+[ext_resource type="Script" path="res://Main.gd" id="1_j75cj"]
+[ext_resource type="PackedScene" uid="uid://p7fmgy66trkt" path="res://player.tscn" id="2_mgvqv"]
+[ext_resource type="PackedScene" uid="uid://b3ldsjh8pleiw" path="res://MainMusic.tscn" id="3_x4toq"]
+[ext_resource type="PackedScene" uid="uid://mcm4vrnqluu1" path="res://Bullet.tscn" id="5_hxers"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_j75cj")
+
+[node name="Control" parent="." instance=ExtResource("1_2nkqo")]
+offset_right = 0.0
+offset_bottom = 0.0
+
+[node name="Sprite2D" parent="." instance=ExtResource("2_mgvqv")]
+position = Vector2(505, 356)
+
+[node name="AudioStreamPlayer2D" parent="." instance=ExtResource("3_x4toq")]
+
+[node name="Sprite2D2" parent="." instance=ExtResource("5_hxers")]
+position = Vector2(442, 266)

@@ -1,0 +1,116 @@
+[gd_scene load_steps=3 format=3 uid="uid://db05i3oqg0ap6"]
+
+[ext_resource type="FontFile" uid="uid://bnpsestqkmyqv" path="res://Font/PeaberryBase.woff" id="1_edy1b"]
+[ext_resource type="Script" path="res://Main/HUD.gd" id="1_s3unc"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_s3unc")
+
+[node name="MainScreen" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Title" type="Label" parent="MainScreen"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -146.0
+offset_top = 40.0
+offset_bottom = 63.0
+grow_horizontal = 2
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("1_edy1b")
+text = "Asteroid Blaster"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="MainScreen"]
+offset_left = 300.0
+offset_top = 200.0
+offset_right = 356.0
+offset_bottom = 224.0
+theme_override_fonts/font = ExtResource("1_edy1b")
+text = "Start"
+
+[node name="GameHUD" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Score" type="Label" parent="GameHUD"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 76.0
+offset_bottom = 43.0
+theme_override_fonts/font = ExtResource("1_edy1b")
+text = "Score:"
+vertical_alignment = 1
+
+[node name="ScoreCounter" type="Label" parent="GameHUD"]
+offset_left = 75.0
+offset_top = 21.0
+offset_right = 115.0
+offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("1_edy1b")
+text = "0"
+vertical_alignment = 1
+
+[node name="PlayerTimer" type="Label" parent="GameHUD"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_edy1b")
+
+[node name="DeathScreen" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="DeathLabel" type="Label" parent="DeathScreen"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -146.0
+offset_top = -82.0
+offset_right = -7.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("1_edy1b")
+text = "You Died. Try again?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="DeathScreen"]
+offset_left = 261.0
+offset_top = 163.0
+offset_right = 352.0
+offset_bottom = 186.0
+theme_override_fonts/font = ExtResource("1_edy1b")
+text = "Score: "
+vertical_alignment = 1
+
+[node name="ScoreCounter" type="Label" parent="DeathScreen"]
+offset_left = 318.0
+offset_top = 164.0
+offset_right = 377.0
+offset_bottom = 187.0
+theme_override_fonts/font = ExtResource("1_edy1b")
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="DeathScreen"]
+offset_left = 281.0
+offset_top = 200.0
+offset_right = 337.0
+offset_bottom = 224.0
+theme_override_fonts/font = ExtResource("1_edy1b")
+text = "Retry"
+
+[connection signal="pressed" from="MainScreen/StartButton" to="." method="start_Pressed"]
+[connection signal="pressed" from="DeathScreen/StartButton" to="." method="start_Pressed"]

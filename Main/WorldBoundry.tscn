@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c4hmahrvnb20p"]
+
+[node name="WorldBoundry" type="Area2D" groups=["World_Boundry"]]
+
+[node name="Boundry" type="CollisionPolygon2D" parent="." groups=["World_Boundry"]]
+build_mode = 1
+polygon = PackedVector2Array(-6, -9, -6, 0, 640, 0, 640, 360, 0, 360, 0, 0, -5, 0, -5, 369, 648, 368, 648, -10)

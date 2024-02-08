@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs45on31ss7gp"]
+
+[ext_resource type="AudioStream" uid="uid://dilq6kug2ep0b" path="res://SoundController/Sounds/Player/Death.wav" id="1_wmof6"]
+
+[node name="PlayerDeathSound" type="AudioStreamPlayer"]
+stream = ExtResource("1_wmof6")
+autoplay = true

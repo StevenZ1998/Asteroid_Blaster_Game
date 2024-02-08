@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://chy53u1oct6dc"]
+
+[ext_resource type="Texture2D" uid="uid://bdqpb3k7ihe2f" path="res://Assets/Purple_Nebula_02-1024x1024.png" id="1_2qwjd"]
+
+[node name="Game_Background" type="TextureRect"]
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("1_2qwjd")
+expand_mode = 1
+stretch_mode = 6

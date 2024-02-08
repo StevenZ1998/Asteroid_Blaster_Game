@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2fcrh24pg0px"]
+
+[ext_resource type="AudioStream" uid="uid://d08ta4xfgcn17" path="res://SoundController/Sounds/Player/LASRGun_Particle Compressor Fire_01.wav" id="1_78r1b"]
+
+[node name="BlasterSound" type="AudioStreamPlayer"]
+stream = ExtResource("1_78r1b")
+autoplay = true

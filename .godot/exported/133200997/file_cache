@@ -1,0 +1,13 @@
+res://Asteroids/Asteroid1/AsteroidOne.tscn::54f0ca6932ba733ad73d74bb4563f4d5::1701546925::res://.godot/exported/133200997/export-92b7c5d8e9124d5fb82125bb736c770f-AsteroidOne.scn
+res://Asteroids/Asteroid2/AsteroidTwo.tscn::bab5d2464470db42658e12a881eae924::1701546925::res://.godot/exported/133200997/export-e0ce816a2ecc684cac859f7530294353-AsteroidTwo.scn
+res://Asteroids/Asteroid.tscn::2f9f7d5f5f94f257a88f8e4915e9ed2f::1701568123::res://.godot/exported/133200997/export-c5cf19c043a5ef529a1b4527a7182a75-Asteroid.scn
+res://Main/Game.tscn::328bf66a0e9e8aed72e1f901a27f24c5::1701571911::res://.godot/exported/133200997/export-c5eec11ec21cb1affaa97c49c7866396-Game.scn
+res://Main/Game_Background.tscn::c8eeddffaa9dcf7c5ee331129cb70fdf::1701476824::res://.godot/exported/133200997/export-8fc87cdbbf863bdfb3cabe9f0d3fc072-Game_Background.scn
+res://Main/HUD.tscn::fe726d7ed0b6e8d726ca77451b222ce3::1701571911::res://.godot/exported/133200997/export-a23f646b4ed4e33855d966546a1f68e6-HUD.scn
+res://Main/WorldBoundry.tscn::ffa10685e1fd2356b43cdbd562ca655d::1701492286::res://.godot/exported/133200997/export-d9c47a0580ebbf88edb0526e07eeee2c-WorldBoundry.scn
+res://Player/PlayerObj.tscn::6c927a156aa18606706553ebecbac6cd::1701568156::res://.godot/exported/133200997/export-829648753945655e5b643d39084343c5-PlayerObj.scn
+res://Projectile/Projectile.tscn::e620095eecc687538beb5f894780b3f3::1701515669::res://.godot/exported/133200997/export-6bc31694737d9c6e5caf5b3057a134df-Projectile.scn
+res://SoundController/Sounds/Asteroid/AsteroidSound.tscn::36ce67d363f2732538826fa4b67ebe45::1701505685::res://.godot/exported/133200997/export-026e4fd82cbcde02197a4c547996f014-AsteroidSound.scn
+res://SoundController/Sounds/Player/BlasterSound.tscn::8b97e91f7b1c305dddd7078b5b0faa8b::1701495131::res://.godot/exported/133200997/export-2cff83b5b75a2f79bcd7c970502a5977-BlasterSound.scn
+res://SoundController/Sounds/Player/PlayerDeathSound.tscn::c764ec49bb9ac3ec91c53841d14ef1d4::1701547432::res://.godot/exported/133200997/export-5fab06283880ae5e9aeb74bafdbd8a42-PlayerDeathSound.scn
+res://SoundController/SoundController.tscn::29d712e25c151e0cd0a4e1a076ec08e6::1701571454::res://.godot/exported/133200997/export-c1c8bbb716991783e90f40c40c914aef-SoundController.scn
