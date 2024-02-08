@@ -6,7 +6,11 @@ I made this over the course of weekend to try out the Godot game engine. Godot h
 The entirety of this project was solo developed by me, the exception being the creation of the assets, as I wanted to focus on game creation rather than creating the art, music, and such.
 
 ## Is the game playable?
-While the game does in fact work, I have not done anything to make this easily playable. That being said, one **CAN** play the game by pulling the files and running it straight from the Godot editor.
+While the game does in fact work, I have not done anything to make this easily playable. That being said, one **CAN** play the game by pulling the files and running it straight from the Godot editor.  
+If you do end up playing, the WASD keys control movement, and the left mouse click shoots.
+
+## I am a potential employer, where is the code?
+Most files that are not within the .godot folder are ones I created/added/configured, be it images, game scenes (the .tscn files), or whatever else. **If you want to see code specifically**, nearly each of the folders house a ".gd" file, which are the script files.
 
 ## (All assets were ensured to be free of use) Credits to the assets I used:
 Background: <a href="https://screamingbrainstudios.itch.io/seamless-space-backgrounds" target="_blank">Seamless Space Backgrounds</a> by Screaming Brain Studios (itch.io)  
